@@ -7,8 +7,8 @@ install:
 	cd scrapper && python3 setup.py install --record ../installed_files
 
 	@echo "Installing systemd files"
-	install -D -m 644 isen-plannings.service $(DESTDIR)/usr/lib/systemd/system/isen-plannings.service
-	install -D -m 644 isen-plannings.timer $(DESTDIR)/usr/lib/systemd/system/isen-plannings.timer
+	install -m 644 isen-plannings.service $(DESTDIR)/usr/lib/systemd/system/isen-plannings.service
+	install -m 644 isen-plannings.timer $(DESTDIR)/usr/lib/systemd/system/isen-plannings.timer
 
 remove:
 	@echo "Removing systemd files"
