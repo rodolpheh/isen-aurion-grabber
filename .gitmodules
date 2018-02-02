@@ -1,0 +1,3 @@
+[submodule "scrapper"]
+	path = scrapper
+	url = https://github.com/MyGg29/Scrapper
